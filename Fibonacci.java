@@ -13,21 +13,21 @@ import java.util.Scanner;
  */
 public class Fibonacci {
     public static void main(String[]args) {
-        Scanner show = new Scanner(System.in);
-        System.out.print("Masukan Jumlah Deret Fibonacci ");
-        int n = show.nextInt();
-        long fib[] = new long[n];
+         int f;
+         Scanner in = new Scanner(System.in);
+         int g = 1;
+         int input;
+         boolean a = false;
          
-        fib[0] = 0;
-        fib[1] = 1;
+         System.out.println("input : ");
+         f = in.nextInt();
          
-        for(int i = 2; i < n; i++) {
-            fib[i] = fib[i-1] + fib[i-2];
-        }
+         System.out.println(" ");
          
-        for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
-        }
-    }
- 
+         g = f- g;
+         f = f + g;
+         
+         System.out.println(f + " ");
+         System.out.println();
+     }
 }
